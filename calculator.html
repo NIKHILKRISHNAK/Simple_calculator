@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+<title>calculator</title>
+  <style>
+  
+.div{
+  background-color:#66004d;
+  font-family: 'Orbitron', sans-serif;
+  width:50px;
+  height:80px;
+  padding:50px;
+  margin:10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius:15px;
+  }
+.table{
+  height:100px;
+  width:100px;
+  border:none;
+  border-radius:10px;
+  background-color: white;
+  margin:
+ length:100px;
+  text-align:center;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+.h1{
+  color:#f2e6ff;
+  font-size:18px;
+  padding:50px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+ 
+  }
+  .button{
+    border:1;
+    color: white;
+    height:30px;
+    width:30px;
+    margin:0px;
+    background-color:#8585ad;
+    font-weight:bold;
+    }
+
+</style>
+</head>
+<body>
+  <div class="div">
+  <h1 class="h1">Calculator</h1>
+    <hr>
+    <table class="table">
+      <tr>
+        
+ <th> <button onclick="add()" class="button">+</button></th>
+ 
+<th>  <button onclick="sub()" class="button">-</button></th>
+  </tr>
+      <tr>
+ <th> <button onclick="mul()" class="button">*</button></th>
+    
+<th>  <button onclick="div()" class="button">/</button></th>
+        </tr>
+      </table>
+    <hr>
+    </div>
+  
+  </body>
+<script>
+
+function add() {
+  let a=parseInt(prompt("Enter the first number you want to add. "));
+  let b=parseInt(prompt("Enter the second number you want to add. "));
+  let c=a+b;
+  alert("Result="+c);
+  }
+function sub()
+{
+  let d=parseInt(prompt("Enter the first number you want to subtract. "));
+  let e=parseInt(prompt("Enter the second number you want to subtract. "));
+  let f=d-e;
+  alert("Result="+f);
+  }
+function mul()
+{
+  let g=parseInt(prompt("Enter the first number you want to multiply ."));
+  let h=parseInt(prompt("Enter the second number you want to multiply. "));
+  let i=g*h;
+  alert("Result="+i);
+  }
+function div()
+{
+  let j=parseInt(prompt("Enter the first number you want to divide ."));
+  let k=parseInt(prompt("Enter the second number you want to divide."));
+  let l=j/k;
+  alert("Result="+l);
+  }
+
+</script>
+  </html>
+
+  
+  
